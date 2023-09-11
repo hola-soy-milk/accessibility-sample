@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Issues Example</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Inaccessible Website</h1>
+      <p>This is a demonstration of an inaccessible website with multiple issues.</p>
+
+      <div class="content">
+        <img src="broken-image.jpg" alt="Image with a missing source">
+
+        <p class="no-alt">This image has no alt attribute, making it inaccessible to screen readers.</p>
+
+        <button onclick="alert('Clicked!')">Click Me</button>
+
+        <form>
+          <label for="input">Name:</label>
+          <input type="text" id="input" placeholder="Enter your name">
+          <span class="hidden-label">Name:</span>
+
+          <button class="hidden-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
